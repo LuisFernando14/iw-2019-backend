@@ -1,0 +1,31 @@
+﻿using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace TutorialMoya001.Hubs
+{
+    public class ActionHub : Hub<IActionHub>
+    {
+        private readonly ILogger logger;
+
+        public ActionHub(ILogger<ActionHub> logger)
+        {
+            this.logger = logger;
+        }
+
+        public async Task JoinDashboardGroup(string partitionKey)
+        {
+            this.logger.LogInformation($"Client {Context.ConnectionId} is viewing {partitionKey}");
+            await Groups.AddToGroupAsync(Context.ConnectionId, partitionKey);
+        }
+        public async Task LeaveDashboardGroup(string partitionKey)
+        {
+            this.logger.LogInformation($"Client {Context.ConnectionId} is no longer viewing {partitionKey}");
+            await Groups.RemoveFromGroupAsync(Context.ConnectionId, partitionKey);
+
+        }
+    }
+}

@@ -1,0 +1,28 @@
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.deps.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.runtimeconfig.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.runtimeconfig.dev.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.pdb
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.csprojAssemblyReference.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.csproj.CoreCompileInputs.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.RazorAssemblyInfo.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.RazorAssemblyInfo.cs
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.AssemblyInfoInputs.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.AssemblyInfo.cs
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.RazorTargetAssemblyInfo.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.pdb
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.deps.json
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.runtimeconfig.json
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.runtimeconfig.dev.json
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.dll
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\bin\Debug\netcoreapp2.2\TutorialMoya001.pdb
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.csprojAssemblyReference.cache
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.RazorAssemblyInfo.cache
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.RazorAssemblyInfo.cs
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.AssemblyInfo.cs
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.RazorTargetAssemblyInfo.cache
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.dll
+C:\Users\admin\Documents\exp\csharp\TutorialMoya001\TutorialMoya001\obj\Debug\netcoreapp2.2\TutorialMoya001.pdb

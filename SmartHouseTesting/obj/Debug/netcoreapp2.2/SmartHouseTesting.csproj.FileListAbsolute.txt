@@ -1,0 +1,17 @@
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\SmartHouseTesting.deps.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\SmartHouseTesting.runtimeconfig.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\SmartHouseTesting.runtimeconfig.dev.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\SmartHouseTesting.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\SmartHouseTesting.pdb
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\TutorialMoya001.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\bin\Debug\netcoreapp2.2\TutorialMoya001.pdb
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\obj\Debug\netcoreapp2.2\SmartHouseTesting.csprojAssemblyReference.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\obj\Debug\netcoreapp2.2\SmartHouseTesting.csproj.CoreCompileInputs.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\obj\Debug\netcoreapp2.2\SmartHouseTesting.AssemblyInfoInputs.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\obj\Debug\netcoreapp2.2\SmartHouseTesting.AssemblyInfo.cs
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\obj\Debug\netcoreapp2.2\SmartHouseTesting.csproj.CopyComplete
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\obj\Debug\netcoreapp2.2\SmartHouseTesting.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\SmartHouseTesting\obj\Debug\netcoreapp2.2\SmartHouseTesting.pdb
