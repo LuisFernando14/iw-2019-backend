@@ -18,7 +18,7 @@ namespace SmartHouseTesting
         [SetUp]
         public void Setup()
         {
-            // mock.Setup(m => m.SaveAsync(us1).GetAwaiter().GetResult()).Returns(us1);
+            mock.Setup(m => m.SaveAsync(us1)).ReturnsAsync<IUsersRepository, User>(us1);
             // mock.Setup(m => m.GetById("lmartinez.bno@gmail.com", "user").GetAwaiter().GetResult()).Returns(us1);
             // mock.Setup(m => m.GetById("", "user").GetAwaiter().GetResult()).Returns(Task.FromResult<User>(us1).Result);
             mock.Setup(m => m.GetCount()).Returns(5);
@@ -34,8 +34,9 @@ namespace SmartHouseTesting
         public void Test1()
         {
             // Assert.Pass();
-            Assert.AreEqual(5, mock.Object.GetCount());
-            // Assert.AreEqual(us1, mock.Object.GetById("lmartinez.bno@gmail.com", "user"));
+            // Assert.AreEqual(5, mock.Object.GetCount());
+            Assert.AreEqual(us1, mock.Object.SaveAsync(us1).GetAwaiter().GetResult());
+
         }
     }
 }

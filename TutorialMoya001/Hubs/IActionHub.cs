@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TutorialMoya001.Models;
 
 namespace TutorialMoya001.Hubs
 {
@@ -13,6 +14,6 @@ namespace TutorialMoya001.Hubs
         // Task QuestionAdded(Question question);
 
         Task DeviceStatusChange(string deviceRowKey, string devicePartitionKey, bool status);
-        Task DeviceIsOnChange(string deviceRowKey, string devicePartitionKey, bool isOn);
+        Task DeviceIsOnChange(Device device);
     }
 }

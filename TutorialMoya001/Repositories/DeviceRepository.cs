@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using TutorialMoya001.Models;
 using TutorialMoya001.Repositories.Interfaces;
 using TutorialMoya001.Entities;
+using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace TutorialMoya001.Repositories
 {
@@ -15,12 +16,18 @@ namespace TutorialMoya001.Repositories
         private readonly string ConnectionString;
         private CloudTable cloudTable;
         IDictionary<string, int> dict = new Dictionary<string, int>();
+        CloudBlobClient cloudBlobClient;
+        CloudBlobContainer cloudBlobContainer;
         public DeviceRepository(string connectionString)
         {
-            this.ConnectionString = connectionString;
+            ConnectionString = connectionString;
+            // Connect to table
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(this.ConnectionString);
             CloudTableClient cloudTableClient = storageAccount.CreateCloudTableClient();
             cloudTable = cloudTableClient.GetTableReference("Devices");
+            // Connect to blob
+            cloudBlobClient = storageAccount.CreateCloudBlobClient();
+            cloudBlobContainer = cloudBlobClient.GetContainerReference("devices-usage");
         }
 
         public async Task<bool> Delete(string partitionKey, string rowKey)
@@ -122,7 +129,6 @@ namespace TutorialMoya001.Repositories
 
         public async Task<Device> Update(Device device)
         {
-            var result = new Result<Device>();
             TableOperation retrieveOperation = TableOperation.Retrieve<DeviceEntity>(device.UserEmail, device.Id);
             TableResult retrievedResult = await cloudTable.ExecuteAsync(retrieveOperation);
             var dev = new DeviceEntity();
@@ -138,6 +144,27 @@ namespace TutorialMoya001.Repositories
                 dev.UserEmail = device.UserEmail;
                 var updateOperation = TableOperation.Replace(dev);
                 await cloudTable.ExecuteAsync(updateOperation);
+                return device;
+            }
+            return null;
+        }
+
+        public async Task<Device> TurnOnOffDevice(Device device)
+        {
+            TableOperation retrieveOperation = TableOperation.Retrieve<DeviceEntity>(device.UserEmail, device.Id);
+            TableResult retrievedResult = await cloudTable.ExecuteAsync(retrieveOperation);
+            var dev = new DeviceEntity();
+            if (retrievedResult.Result != null)
+            {
+                dev = retrievedResult.Result as DeviceEntity;
+                dev.IsOn = device.IsOn;
+                var updateOperation = TableOperation.Replace(dev);
+                var tblResult = await cloudTable.ExecuteAsync(updateOperation);
+                // guardar datos aqui
+                var blob = cloudBlobContainer.GetAppendBlobReference("usage.txt");
+                // Interesante solución
+                // https://stackoverflow.com/questions/7653876/azure-updating-an-existing-xml-file-in-blob-storage
+                await blob.AppendTextAsync("Super smash bros ultimate\n");
                 return device;
             }
             return null;

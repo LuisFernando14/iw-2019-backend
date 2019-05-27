@@ -13,5 +13,6 @@ namespace TutorialMoya001.Repositories.Interfaces
         Task<Device> GetById(string partitionKey, string rowKey);
         Task<Device> Update(Device device);
         Task<bool> Delete(string partitionKey, string rowKey);
+        Task<Device> TurnOnOffDevice(Device deice);
     }
 }

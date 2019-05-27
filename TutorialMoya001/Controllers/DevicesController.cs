@@ -6,6 +6,8 @@ using TutorialMoya001.Hubs;
 using TutorialMoya001.Models;
 using TutorialMoya001.Repositories.Interfaces;
 
+// https://fontawesome.com/icons?d=gallery&q=cloud
+
 namespace TutorialMoya001.Controllers
 {
     [Route("api/[controller]")]
@@ -63,7 +65,7 @@ namespace TutorialMoya001.Controllers
             {
                 correct = true,
                 title = "Mensaje del sistema",
-                message = "Dispositivo obtenido correctamente",
+                message = "Dispositivo agregado exitosamente",
                 deviceData = response,
                 fullStackTrace = "",
             });
@@ -75,9 +77,9 @@ namespace TutorialMoya001.Controllers
         {
             var response = await devicesRepository.Update(device);
             // Notify clients in the group
-            await this.hubContext.Clients.Group(device.UserEmail).DeviceIsOnChange(device.Id, device.UserEmail, device.IsOn);
+            await this.hubContext.Clients.Group(device.UserEmail).DeviceIsOnChange(response);
             // Notify every client
-            await this.hubContext.Clients.All.DeviceStatusChange(device.Id, device.UserEmail, device.IsOn);
+            await this.hubContext.Clients.All.DeviceStatusChange(response.Id, response.UserEmail, response.IsOn);
             return Ok(new
             {
                 correct = true,
@@ -98,6 +100,31 @@ namespace TutorialMoya001.Controllers
                 correct = response,
                 title = "Mensaje del sistema",
                 message = "Dispositivo eliminado correctamente",
+                deviceData = response,
+                fullStackTrace = "",
+            });
+        }
+
+        [HttpPatch]
+        public async Task<IActionResult> Patch([FromBody] Device device)
+        {
+            if (device == null)
+            {
+                return Ok(new
+                {
+                    correct = false,
+                    title = "Petición inválida.",
+                    message = "No se permite enviar solicitud vacía",
+                    deviceData = device,
+                    fullStackTrace = "",
+                });
+            }
+            var response = await devicesRepository.TurnOnOffDevice(device);
+            return Ok(new
+            {
+                correct = false,
+                title = "Petición inválida.",
+                message = "No se permite enviar solicitud vacía",
                 deviceData = response,
                 fullStackTrace = "",
             });
