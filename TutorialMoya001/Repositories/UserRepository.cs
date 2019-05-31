@@ -87,9 +87,9 @@ namespace TutorialMoya001.Repositories
             {
                 TableOperation retrieveOperation = TableOperation.Retrieve<UserEntity>(partitionKey, rowKey);
                 TableResult retrievedResult = await cloudTable.ExecuteAsync(retrieveOperation);
-                if (retrievedResult.Result != null)
+                if (retrievedResult.Result != null)// deviceEntity -> device
                 {
-                    Console.WriteLine(((UserEntity)retrievedResult.Result));
+                    // Console.WriteLine(((UserEntity)retrievedResult.Result));
                     user.Email = ((UserEntity)retrievedResult.Result).Email;
                     user.Name = ((UserEntity)retrievedResult.Result).Name;
                     user.LastName = ((UserEntity)retrievedResult.Result).LastName;

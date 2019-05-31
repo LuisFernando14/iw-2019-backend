@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "8d8b148cbf06310e6a8560be8efb0e81f6e0f796"
+    "signature": "b30b4abc5ce334b32ef2211ac9df31fdf25e5290"
   },
   "compilationOptions": {
     "defines": [
@@ -24,8 +24,10 @@
     ".NETCoreApp,Version=v2.2": {
       "TutorialMoya001/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.SignalR": "2.4.1",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
+          "Microsoft.AspNetCore.SignalR.Core": "1.1.0",
           "Microsoft.Azure.CosmosDB.Table": "2.1.0",
           "Microsoft.Azure.Storage.Blob": "10.0.2",
           "Microsoft.NETCore.App": "2.2.0",
@@ -39,6 +41,7 @@
           "TutorialMoya001.dll": {}
         }
       },
+      "Microsoft.AspNet.SignalR/2.4.1": {},
       "Microsoft.Azure.CosmosDB.Table/2.1.0": {
         "runtime": {
           "lib/net45/Microsoft.Azure.CosmosDB.Table.dll": {
@@ -3608,6 +3611,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNet.SignalR/2.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aYbLVE5toZwv/qaQ0BiIZRRwN/00WKYzGjaYUWIQuI91xZ50nnAymWD1sxCZFN9XXDRq8bevM5ET9GmAeOI/Nw==",
+      "path": "microsoft.aspnet.signalr/2.4.1",
+      "hashPath": "microsoft.aspnet.signalr.2.4.1.nupkg.sha512"
     },
     "Microsoft.Azure.CosmosDB.Table/2.1.0": {
       "type": "package",

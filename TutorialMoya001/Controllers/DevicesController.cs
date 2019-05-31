@@ -129,5 +129,6 @@ namespace TutorialMoya001.Controllers
                 fullStackTrace = "",
             });
         }
-    }
+    }// put: objeto entero
+    // patch: cambiar cierta caracteristca
 }

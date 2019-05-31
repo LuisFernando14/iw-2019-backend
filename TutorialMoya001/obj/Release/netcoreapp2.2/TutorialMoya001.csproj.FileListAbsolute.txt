@@ -1,0 +1,14 @@
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Release\netcoreapp2.2\TutorialMoya001.deps.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Release\netcoreapp2.2\TutorialMoya001.runtimeconfig.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Release\netcoreapp2.2\TutorialMoya001.runtimeconfig.dev.json
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Release\netcoreapp2.2\TutorialMoya001.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\bin\Release\netcoreapp2.2\TutorialMoya001.pdb
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.csprojAssemblyReference.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.csproj.CoreCompileInputs.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.RazorAssemblyInfo.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.RazorAssemblyInfo.cs
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.AssemblyInfoInputs.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.AssemblyInfo.cs
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.RazorTargetAssemblyInfo.cache
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.dll
+C:\Users\lfern\OneDrive\Documentos\Visual Studio 2017\Projects\TutorialMoya001\TutorialMoya001\obj\Release\netcoreapp2.2\TutorialMoya001.pdb

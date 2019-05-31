@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -61,7 +62,20 @@ namespace TutorialMoya001
             services.AddTransient(f =>
                 new Util(IsUser, Audience, SecretKey)
             );
-
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+            /*
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+            builder =>
+            {
+                builder.AllowAnyMethod().AllowAnyHeader()
+                       .WithOrigins("http://localhost:8080", "http://localhost:80")
+                       .AllowCredentials();
+            }));
+            */
             services.AddCors();
             services.AddSignalR();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
@@ -79,20 +93,24 @@ namespace TutorialMoya001
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            
             app.UseCors(builder =>
                builder
-                   .WithOrigins("http://localhost:8080", "http://localhost:80")
+                   .WithOrigins("http://localhost:8080", "http://localhost:80", "http://68.183.127.101", "http://ropalinda.website", "http://ropalinda.website")
                    .AllowAnyMethod()
                    .AllowAnyHeader()
                    .AllowCredentials()
                    );
+                   
             // Register SignalR hubs
             app.UseSignalR(route =>
             {
                 route.MapHub<ActionHub>("/action-hub");
             });
-
+            // app.UseCors("CorsPolicy");
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
             app.UseMvc();
         }
     }

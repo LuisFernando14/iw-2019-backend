@@ -1,14 +1,17 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿// using Microsoft.AspNet.SignalR;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+// using Microsoft.AspNet.SignalR.Hubs;
 
 namespace TutorialMoya001.Hubs
 {
     public class ActionHub : Hub<IActionHub>
     {
+        public String HubName { get; private set; }
         private readonly ILogger logger;
 
         public ActionHub(ILogger<ActionHub> logger)
@@ -29,3 +32,6 @@ namespace TutorialMoya001.Hubs
         }
     }
 }
+
+
+// 
